@@ -112,11 +112,11 @@ Which produced this angular graph:
 
 ## Challenge - Deliverable 4 - Customized Dashboard
 
-For this final part of the challenge we were tasked with using our HTML/CSS and Bootstrap knowledge to format the webpage. I used a large amount of CSS to work both with the Bootstrap in-built features as well as overwrite them: [style.css](style.css) which involved a lot of using the CSS `!important` tag.
+For this final part of the challenge we were tasked with using our HTML/CSS and Bootstrap knowledge to format the webpage. I used a large amount of CSS to work both with the Bootstrap in-built features as well as overwrite them: [style.css](style.css) - which involved a lot of using the CSS `!important` tag.
 
-I added an image to the `jumbotron` and formatted the headings contained in it. I changed the site background as well as the elements in the site, this included the graphs which I matched to the backgrounds. For the `DEMOGRAPHIC INFO` I added classes in the JS file so that I could add CSS to them as well - I think this showed off well the data that was changing when selecting a new entry from the dropdown list. I also included a quick introduction to the site, as well as some short descriptions about each graph. I tried to keep everything lined up with Bootstrap's grid system which allowed the site to be very responsive, which I worked in with the graphs themselves. This means the whole website scales nicely no matter which device you use. Below is a snapshot of the current webpage:
+I added an image to the `jumbotron` and formatted the headings contained in it. I changed the site background as well as the elements in the site, this included the graphs which I matched to the backgrounds. For the `DEMOGRAPHIC INFO` elements I added classes in the JS file so that I could add CSS to them as well - I think this showed off well the data that was changing when selecting a new entry from the dropdown list. I also included a quick introduction to the site, as well as some short descriptions about each graph. I tried to keep everything lined up with Bootstrap's grid system which allowed the site to be very responsive, which I worked in with the graphs themselves. This means the whole website scales nicely no matter which device you use. Below is a snapshot of the current webpage:
 
-![Screenshot of Current Webpage (index.html)](d4.png)
+![Screenshot of Current Webpage (index.html)](images/d4.png)
 
 ## Context
 
