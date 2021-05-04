@@ -87,6 +87,34 @@ function buildCharts(sample) {
       title: "Top 10 Bacteria Cultures Found"
     };
     // 10. Use Plotly to plot the data with the layout.
-    Plotly.newPlot("bar", barData);
+    Plotly.newPlot("bar", barData, barLayout);
+
+    // -- START DELIVERABLE 2 -- //
+    // 1. Create the trace for the bubble chart.
+    var bubbleData = [{
+      x: otu_ids,
+      y: sample_values,
+      text: otu_labels,
+      mode: "markers",
+      marker: {
+        // Scaled to match Challenge Picture.
+        size: sample_values.map((v) => v * 0.8),
+        color: otu_ids,
+        colorscale:"Earth"
+      }
+    }];
+    // 2. Create the layout for the bubble chart.
+    var bubbleLayout = {
+      title: "Bacteria Cultures Per Sample",
+      xaxis: {title: "OTU ID"},
+      hovermode: "closest"
+    };
+    // 3. Use Plotly to plot the data with the layout.
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+
+    // -- START DELIVERABLE 3 -- //
+
+
+    
   });
 }
