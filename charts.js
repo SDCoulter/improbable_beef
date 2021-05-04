@@ -47,7 +47,8 @@ function buildMetadata(sample) {
     // Hint: Inside the loop, you will need to use d3 to append new
     // tags for each key-value in the metadata.
     Object.entries(result).forEach(([key, value]) => {
-      PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
+      PANEL.append("p").text(`${key.toUpperCase()}`).classed("info-tag", true);
+      PANEL.append("p").text(`${value}`).classed("info-tag-info", true);
     });
 
   });
@@ -84,7 +85,9 @@ function buildCharts(sample) {
     }];
     // 9. Create the layout for the bar chart.
     var barLayout = {
-      title: "Top 10 Bacteria Cultures Found"
+      title: "<b>Top 10 Bacteria Cultures Found</b>",
+      plot_bgcolor: "lightyellow",
+      paper_bgcolor: "lightyellow"
     };
     // 10. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bar", barData, barLayout);
@@ -105,9 +108,11 @@ function buildCharts(sample) {
     }];
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
-      title: "Bacteria Cultures Per Sample",
+      title: "<b>Bacteria Cultures Per Sample</b>",
       xaxis: {title: "OTU ID"},
-      hovermode: "closest"
+      hovermode: "closest",
+      plot_bgcolor: "lightyellow",
+      paper_bgcolor: "lightyellow"
     };
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
@@ -144,7 +149,9 @@ function buildCharts(sample) {
 
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = {
-      title: '<b>Belly Button Wash Frequency</b> <br> Scrubs per Week'
+      title: '<b>Belly Button Wash Frequency</b> <br> Scrubs per Week',
+      plot_bgcolor: "lightyellow",
+      paper_bgcolor: "lightyellow"
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
