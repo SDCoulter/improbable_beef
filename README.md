@@ -1,5 +1,9 @@
 # Challenge - Improbable Beef
 
+## GitHub Pages
+
+**You can see a live version of this webpage here: [Improbable Beef - Belly Button Bacteria](https://sdcoulter.github.io/improbable_beef/)**
+
 ## Challenge - Overview
 
 In this module we explored using the JavaScript libraries Plotly and D3 to create dynamic graphs. We were given a dataset that contained the bacteria counts from a number of anonymised participants and were tasked with displaying it on a webpage for easy access and use.
